@@ -1,0 +1,65 @@
+/* reset css  */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+/* end reset  */
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.list-card {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item-card {
+    padding: 20px;
+    /* background-color: aquamarine; */
+    /* border: 1px solid rgb(54, 20, 146); */
+    width: calc(100%/3);
+
+}
+
+.item-card img {
+    width: 100%;
+    max-width: 100px;
+    margin: 0 auto;
+    display: block;
+}
+.card-container:hover{
+    box-shadow: 7px 7px 6px #ccc;
+}
+
+
+.card-container {
+    transition: 0.3s ease-in-out;
+    /* overflow: hidden;  */
+    border-radius: 15px;
+    border: 1px solid rgb(54, 20, 146);
+}
+
+.desc {
+    padding: 10px;
+}
+
+@media (max-width:991px) {
+    .item-card {
+        width: calc(100%/2);
+    }
+}
+
+@media (max-width:400px) {
+    .item-card {
+        width: 100%;
+    } 
+}
